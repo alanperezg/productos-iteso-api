@@ -5,7 +5,7 @@ const fs = require('fs');
 const cors = require('cors');
 
 const app = express();
-const port = 80;
+const port = process.env.PORT || 8080;
 
 let productos = JSON.parse(fs.readFileSync('productos.json'));
 let cuentas = JSON.parse(fs.readFileSync('cuentas.json'));
