@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const cors = require('cors');
 
 const app = express();
 const port = 80;
@@ -9,8 +10,12 @@ const port = 80;
 let productos = JSON.parse(fs.readFileSync('productos.json'));
 let cuentas = JSON.parse(fs.readFileSync('cuentas.json'));
 let jsonParser = bodyParser.json();
+
+
+app.use(cors());
 app.use(jsonParser);
 app.use('',logMiddleware);
+
 app.route('/productos')
 .get((req, res) => {
     let marcaQuery = req.query.marca;
@@ -123,9 +128,9 @@ app.post('/usuario/login', (req, res) => {
 });
 app.post('/usuario/logout', authMiddleWare, (req, res) => {
     let token = req.headers['x-auth'];
-    let username = req.headers['x-user']
+    let usuario = req.headers['x-user']
     cuentas.forEach((e, i) => {
-        if(e.username == username && e.token == token){
+        if(e.usuario == usuario && e.token == token){
             let time = new Date();
             time.setMinutes(time.getMinutes() - 5);
             cuentas[i].validThru = time;
