@@ -1,0 +1,13 @@
+[{"id":"0", "nombre":"Televisión 13 pulgadas", "marca":"Sony", "precio":"4500", "descripcion":"Televisión 13 pulgadas Sony", "existencia":"12"},
+{"id":"1", "nombre":"Televisión 15 pulgadas", "marca":"Sony", "precio":"6000", "descripcion":"Tevisión 15 pulgadas Sony", "existencia":"20"},
+{"id":"2", "nombre":"Refrigerador", "marca":"Whirlpool", "precio":"8000", "descripcion":"Refrigerador Whirlpool", "existencia":"1"},
+{"id":"3", "nombre":"Tostadora", "marca":"Mabe", "precio":"700", "descripcion":"Tostadora Mabe", "existencia":"5"},
+{"id":"4", "nombre":"Horno de microondas", "marca":"LG", "precio":"3500", "descripcion":"Horno de microondas LG", "existencia":"10"},
+{"id":"5", "nombre":"Estufa 5 quemadores", "marca":"Mabe", "precio":"8000", "descripcion":"Estufa 5 quemadores Mabe", "existencia":"15"},
+{"id":"6", "nombre":"Bocinas sonido 7.1", "marca":"Logitech", "precio":"3500", "descripcion":"Bocinas sonido 7.1 Logitech", "existencia":"12"},
+{"id":"7", "nombre":"Macbook Pro", "marca":"Apple", "precio":"17000", "descripcion":"Macbook Pro MD101/EA", "existencia":"2"},
+{"id":"8", "nombre":"Audifonos Bose Soundsport Free", "marca":"4700", "precio":"1000", "descripcion":"Audifonos Bose Soundsport Free", "existencia":"7"},
+{"id":"9", "nombre":"Apple TV", "marca":"Apple", "precio":"7500", "descripcion":"Apple TV", "existencia":"10"},
+{"id":"10", "nombre":"Computadora Desktop", "marca":"Hp", "precio":"12000", "descripcion":"Computadora Desktop Hp", "existencia":"22"},
+{"id":"11", "nombre":"Impresora Color", "marca":"Hp", "precio":"3000", "descripcion":"Impresora Color Hp", "existencia":"19"},
+{"id":"12", "nombre":"Televisión 18 pulgadas", "marca":"LG", "precio":"7000", "descripcion":"Televisión 18 pulgadas LG", "existencia":"6"}]
