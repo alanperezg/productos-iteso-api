@@ -26,11 +26,9 @@ app.route('/productos')
                 result.push(e);
             }
         });
-        res.json(result);
-    }else{
-        res.json(productos); 
+        return res.json(result);
     }
-    res.json(result);
+    return res.json(productos); 
 }).post(authMiddleWare, (req, res) => {
     let body = req.body;
     if(!(body.nombre && body.marca && body.precio && body.descripcion && body.existencia)){
@@ -73,10 +71,12 @@ app.route('/productos/:id')
     if(index == null){
         return res.status(400).json({error:"Articulo no encontrado"});
     }
-    if(body.precio || body.existencia){
+    if(body.precio){
         if(!(parseInt(body.precio)>-1)){
             return res.status(400).json({error:"El precio no cumple con el formato"});
         }
+    }
+    if(body.existencia){
         if(!(parseInt(body.existencia)>-1)){
             return res.status(400).json({error:"La existencia no cumple con el formato"});
         }
